@@ -31,7 +31,7 @@ jobs:
       # Ingest the data in `./data/ingest.json` to the Globus Search index.
       - name: Ingest ./data/ingest.json
         id: ingest
-        uses: actions/github-script@v7
+        uses: actions/github-script@v8
         env:
           # Load the Globus-required secrets from the GitHub Actions secrets.
           CLIENT_SECRET: ${{ secrets.GLOBUS_CLIENT_SECRET }}
